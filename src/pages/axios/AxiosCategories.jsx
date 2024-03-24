@@ -5,7 +5,6 @@ import LoadingComponent from "../../component/LoadingComponent";
 export default function AxiosCategories() {
   const [data, isLoading, isError, error] = useCategoriesAxiosApi();
 
-  console.log(data);
   return (
     <div className="col-sm-12">
       <h1>Axios: Kategoriler</h1>

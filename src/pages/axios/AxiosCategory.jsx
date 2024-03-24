@@ -8,8 +8,6 @@ export default function AxiosCategory() {
   const { categoryName } = useParams();
   const [data, isLoading, isError, error] = useCategoryAxiosApi(categoryName);
 
-  console.log(data);
-
   return (
     <div className="col-sm-12">
       <h1>Fetch: Kategori</h1>

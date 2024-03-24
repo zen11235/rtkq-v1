@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import LoadingComponent from "../../component/LoadingComponent";
 import useCategoriesFetchApi from "../../customHooks/useCategoriesFetchApi";
 
@@ -12,7 +13,7 @@ export default function FetchCategories() {
       <ul className="list-group">
         {data.map((item) => (
           <li className="list-group-item" key={item.id}>
-            {item.name}
+            <Link to={`/fetch-category/${item.id}`}>{item.name}</Link>
           </li>
         ))}
       </ul>
